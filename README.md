@@ -1,4 +1,4 @@
-# dependency-injection
+# inversifyjs-demo
 
 This project demonstrates the usage of 
 [InversifyJS](https://github.com/inversify/InversifyJS) to create inversion
