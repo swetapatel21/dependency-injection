@@ -1,0 +1,12 @@
+{
+    "apis": {
+        "baseURL": "https://reqres.in",
+        "endpoints": {
+            "singleUser": "/api/users/2",
+            "allUsers": "/api/users?delay=5"
+        }
+    },
+    "logger": {
+        "level": "info"
+    }
+}
