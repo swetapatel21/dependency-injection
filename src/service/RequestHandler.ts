@@ -19,7 +19,9 @@ export class RequestHandler {
             promises.push(this.client.getUsers(`${this.config.baseURL}${endpoint}`));
         }
 
-        const results = await Promise.all(promises);
+        const results = await Promise.all(promises).catch(() => {
+            return [];            
+        });
         this.logger.debug("Logging results");
         this.logResults(results);
     }
