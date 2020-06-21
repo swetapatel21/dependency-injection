@@ -4,10 +4,15 @@ This project demonstrates the usage of
 [InversifyJS](https://github.com/inversify/InversifyJS) to create inversion
 of control container. 
 
+This project makes following two API calls described [here](https://reqres.in/)
+and displays the results on the console.
+* list a particular user `/api/users?page=2`
+* list users with some delay `/api/users?delay=`
+
 But, before we start using InversifyJS, let's take some time to understand some
 basic concepts. 
 
-### What is Dependency Injection?
+## What is Dependency Injection?
 In simple words, dependency injection is providing an object with everything
 that it needs(dependencies) to do some work instead of letting the object
 create those dependencies.
@@ -23,7 +28,7 @@ class ArtSupplies {
 
 In the above example, `paints` is the dependency for `ArtSupplies`. 
 
-### Why do we need Dependency Injection?
+## Why do we need Dependency Injection?
 Do you see any problem with the above code?
 
 If we want to test the code shown above, we would have to somehow mock the
@@ -46,7 +51,7 @@ class ArtSupplies {
 There are other ways too, like injecting dependencies through setter methods
 and through interfaces.
 
-### Inversion of Control
+## Inversion of Control
 
 See any problem with the dependency injection in the code above? 
 
@@ -75,3 +80,9 @@ Main tasks of the container are
 * Create objects
 * Know dependencies of all the classes 
 * Be read to provide dependencies when asked 
+
+## Run this project
+1. Compile the project 
+  `tsc`
+2. Run the project
+  `node src/Index.js`
