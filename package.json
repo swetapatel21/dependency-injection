@@ -17,7 +17,8 @@
   "homepage": "https://github.com/swetapatel21/inversifyjs-demo#readme",
   "dependencies": {
     "inversify": "5.0.1",
-    "reflect-metadata": "0.1.12"
+    "reflect-metadata": "0.1.12",
+    "axios": "0.19.2"
   },
   "devDependencies": {
     "winston": "3.2.1",

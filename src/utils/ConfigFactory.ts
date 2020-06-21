@@ -4,16 +4,11 @@ export interface IConfig
     logger: ILogger
 }
 
-interface ILogger {
+export interface ILogger {
     level: string
 }
 
-interface IAPIs {
+export interface IAPIs {
     baseURL: string,
-    endpoints: IEndpoints
-}
-
-interface IEndpoints {
-    singleUser: string,
-    allUsers: string
+    endpoints: string[]
 }
