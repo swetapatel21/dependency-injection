@@ -2,11 +2,11 @@
     "apis": {
         "baseURL": "https://reqres.in",
         "endpoints": [
-            "/api/users/a",
+            "/api/users/2",
             "/api/users?delay=5"
         ]
     },
     "logger": {
-        "level": "info"
+        "level": "debug"
     }
 }
