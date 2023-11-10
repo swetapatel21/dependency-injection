@@ -18,7 +18,7 @@
   "dependencies": {
     "inversify": "5.0.1",
     "reflect-metadata": "0.1.12",
-    "axios": "0.21.2"
+    "axios": "1.6.0"
   },
   "devDependencies": {
     "winston": "3.2.1",
